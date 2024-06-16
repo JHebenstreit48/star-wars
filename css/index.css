@@ -56,11 +56,16 @@ h1 + p {
 	color:  yellow;
 	text-decoration: none;
 	padding: 10px 20px;
-	border: solid #02a8f5;
+	border: solid #ffae00;
+	
 }
 
 .site-nav a:hover {
-	background-color: red;
+	background-color: rgb(135, 2, 147);
+}
+
+.site-nav a:active {
+	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
 }
 /* End Site Navigation */
 
