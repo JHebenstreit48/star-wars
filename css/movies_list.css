@@ -2,20 +2,30 @@ html {
     background-color: #0a0100;
 }
 
+/* Start Page Heading */
+
 h1 {
-	color: yellow;
+	margin: 20px 40px 45px 40px;
+	color: Yellow;
 	text-align: center;
-    font-size: 375%;
-    padding: 20px 40px 20px 40px;
-    border: solid white;
-    border: 3px 3px 3px 3px;
+	font-size: 375%;
+	padding: 10px 40px 10px 40px;
+	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
 }
+
+h1 + p {
+	margin: 15px;
+	padding: 15px;
+}
+
+/* End Page Heading */
+
+/* Start Site Navigation */
 
 .site-nav {
 	margin: 10px 20px 10px 20px;
 	display: flex;
 	gap: 6px;
-	margin-bottom: 40px;
 }
 
 .site-nav ul {
@@ -26,6 +36,7 @@ h1 {
 .site-nav li {
 	list-style: none;
 	float: left;
+	margin: 0 8px 0 8px;
 	margin-right: 8px;
 	width: 150px;
 	text-align: center;
@@ -36,15 +47,21 @@ h1 {
 	display: block;
 	color:  yellow;
 	text-decoration: none;
-	padding: 20px 25px;
-	border: solid #02a8f5;
-	border-radius: 60%;
+	padding: 10px 20px;
+	border: solid #ffae00;
+	
 	
 }
 
 .site-nav a:hover {
-	background-color: red;
+	background-color: rgb(135, 2, 147);
 }
+
+.site-nav a:active {
+	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
+}
+
+/* End Site Navigation */
 
 ol {
 	

@@ -2,33 +2,25 @@ html {
 	background-color: #0a0100;
 }
 
-body {
-	box-sizing: border-box;
-	font-family: arial;
-	line-height: 1.55;
-}
-
-body > * {
-	width: 980px;
-	max-width: calc( 100vw -32px);
-	margin: 0 auto;
-}
+/* Start Page heading */
 
 h1 {
-	margin-bottom: 0;
+	margin: 20px 40px 45px 40px;
 	color: Yellow;
 	text-align: center;
 	font-size: 375%;
-	padding: 20px 40px 20px 40px;
-    border: solid white;
-    border: 3px 3px 3px 3px;
+	padding: 10px 40px 10px 40px;
+	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
 }
 
 h1 + p {
-	margin-top: 0;
+	margin: 15px;
+	padding: 15px;
 }
 
-/* Site Navigation */
+/* End Page heading */
+
+/* Start Site Navigation */
 
 .site-nav {
 	margin: 10px 20px 10px 20px;
@@ -44,7 +36,7 @@ h1 + p {
 .site-nav li {
 	list-style: none;
 	float: left;
-	margin-right: 8px;
+	margin: 0 8px 0 8px;
 	margin-right: 8px;
 	width: 150px;
 	text-align: center;
@@ -58,6 +50,7 @@ h1 + p {
 	padding: 10px 20px;
 	border: solid #ffae00;
 	
+	
 }
 
 .site-nav a:hover {
@@ -69,25 +62,34 @@ h1 + p {
 }
 /* End Site Navigation */
 
-main {
-	display: flex
+.history {
+	padding: 5px 78px 2px 65px;
+	margin: 15px;
+	text-align: left;
 }
 
-section {
-	padding: 12px 12px 12px 0;
-}
-
-section p {
+.history p {
 	color: white;
 }
 
-section p span {
+.date {
 	color: blue;
 }
 
-aside img {
-	width: 50%;
-	height: 50%;
-	margin-bottom: 25px;
-	margin-top: 25px;
+.episodes {
+	color: red;
+	font-style: italic;
+}
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	margin-left: 15px;
+}
+
+section img {
+	max-width: 31%;
+	padding: 10px;
+	margin:5px 0 10px 5px;
 }
