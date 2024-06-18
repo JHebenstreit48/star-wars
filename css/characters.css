@@ -56,35 +56,11 @@ h1 + p {
 }
 
 /* .site-nav a:active {
-	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
+    box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
 } */
 
 /* End Site Navigation */
 
-ol {
-	list-style-type: upper-roman;
-    list-style-position: inside;
-    color: rgb(235, 222, 37);
-}
-
-ol ul {
-	list-style-type: square;
-	margin-bottom: 9px;
-	color: rgb(252, 28, 28);
-}
-
-.border {
-	border: solid white;
-    border: 3px 3px 3px 3px;
-	padding: 20px 40px 20px 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-footer {
-    text-align: center;
-}
-
-footer a {
-    color: red;
+h2 {
+    color: rgb(63, 188, 230);
 }

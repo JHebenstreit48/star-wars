@@ -55,11 +55,13 @@ h1 + p {
 
 .site-nav a:hover {
 	background-color: rgb(135, 2, 147);
-}
-
-.site-nav a:active {
 	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
 }
+
+/* .site-nav a:active {
+	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset; 
+} */
+ 
 /* End Site Navigation */
 
 .history {
@@ -81,15 +83,30 @@ h1 + p {
 	font-style: italic;
 }
 
-section {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: left;
-	margin-left: 15px;
+.movies  {
+	font-style: italic;
+	color: yellow;
 }
 
-section img {
+.images {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.images img {
 	max-width: 31%;
 	padding: 10px;
-	margin:5px 0 10px 5px;
 }
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+	section img {
+		display:flex;
+		flex-flow:column wrap;
+		align-items: center;
+	}
+	body {
+		background-color: rgb(117, 18, 126);
+	}
+ }
