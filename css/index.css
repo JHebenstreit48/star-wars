@@ -13,6 +13,7 @@ h1 {
 	font-size: 375%;
 	padding: 10px 40px 10px 40px;
 	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
+	border-radius: 8px;
 }
 
 h1 + p {
@@ -66,9 +67,11 @@ h1 + p {
  
 /* End Site Navigation */
 
-.history {
-	padding: 5px 78px 2px 65px;
-	margin: 15px;
+main {
+	display: flex;
+	justify-content: center;
+	padding: 5px 45px 2px 62px;
+	margin: 20px 315px 25px 225px;
 	text-align: left;
 }
 
@@ -94,10 +97,12 @@ h1 + p {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	margin-left: 150px;
+	margin-right: 210px;
 }
 
 .images img {
-	max-width: 31%;
+	max-width: 25%;
 	padding: 10px;
 }
 
