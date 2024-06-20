@@ -13,6 +13,7 @@ h1 {
 	font-size: 375%;
 	padding: 10px 40px 10px 40px;
 	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
+	border-radius: 8px;
 }
 
 h1 + p {
@@ -55,6 +56,7 @@ h1 + p {
 
 .site-nav a:hover {
 	background-color: rgb(135, 2, 147);
+	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
 }
 
 /* .site-nav a:active {
@@ -66,22 +68,20 @@ h1 + p {
 /* Start table */
 
 table {
-	display: flex;
-	border: 3px solid white;
-	margin-left: 710px;
-	margin-right: 710px;
+	border: 3px solid rgb(204, 19, 255);
+	margin-left: auto;
+	margin-right: auto;
 	border-spacing: 0;
 	border-collapse: collapse;
-	justify-content: center;
+	width: calc(100% - 84%);
+	max-width: 715px;
+	min-width: 515px;
+	box-shadow: 0 0 20px 14px rgb(223, 190, 7);
 }
 .canon {
-	/* padding-left: 100px; */
-	/* padding-right: 100px; */
-	/* display: block; */
 	color: green;
 	text-align: center;
 	padding: 15px 80px 20px 80px;
-	border-bottom: 0 solid white;
 	font-size:185%;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -100,7 +100,7 @@ table, .canon {
 td {
 	color: red;
 	text-align: center;
-	border: 1px solid white;
+	border: 1px solid rgb(204, 19, 255);
 	padding: 15px 65px 10px 65px;
 	
 }
@@ -116,12 +116,9 @@ td {
 }
 
 .extended-universe {
-	/* padding-left: 100px; */
-	/* padding-right: 100px; */
 	color: green;
 	text-align: center;
 	padding: 15px 80px 20px 80px;
-	border-bottom: 0 solid white;
 	font-size:185%;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
