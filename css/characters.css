@@ -4,21 +4,20 @@ html {
     background-color: #0a0100;
 }
 
+body {
+	box-sizing: border-box;
+}
+
 /* Start Page Heading */
 
 h1 {
-	margin: 20px 40px 45px 40px;
+	margin: 20px 2% 45px;
 	color: Yellow;
 	text-align: center;
 	font-size: 375%;
-	padding: 10px 40px 10px 40px;
+	padding: 10px auto 10px;
 	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
 	border-radius: 8px;
-}
-
-h1 + p {
-	margin: 15px;
-	padding: 15px;
 }
 
 /* End Page Heading */
@@ -124,3 +123,32 @@ td {
 }
 
 /* End Table */
+
+/* media queries for devices under 600pixels */
+@media screen and (max-width: 768px) {
+	header {
+	 flex-direction: column;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	}
+	header h1 {
+		text-align: center;
+		align-items: center;
+	}
+	nav {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+ 	}
+	nav ul {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+	 gap: 9px
+	}
+	table {
+		justify-content: center;
+		align-items: center;
+		min-width: 1%;
+	}
+}
