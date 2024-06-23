@@ -2,12 +2,17 @@
 
 html {
 	background-color: #0a0100;
+	box-sizing: border-box;
+}
+
+body {
+	box-sizing: border-box;
 }
 
 /* Start Page heading */
 
 h1 {
-	margin: 20px 40px 45px 40px;
+	margin: 20px 2% 45px;
 	color: Yellow;
 	text-align: center;
 	font-size: 375%;
@@ -16,17 +21,12 @@ h1 {
 	border-radius: 8px;
 }
 
-h1 + p {
-	margin: 15px;
-	padding: 15px;
-}
-
 /* End Page heading */
 
 /* Start Site Navigation */
 
 .site-nav {
-	margin: 10px 20px 10px 20px;
+	margin: 10px 20px 32px 20px;
 	display: flex;
 	gap: 6px;
 }
@@ -40,7 +40,6 @@ h1 + p {
 	list-style: none;
 	float: left;
 	margin: 0 8px 0 8px;
-	margin-right: 8px;
 	width: 150px;
 	text-align: center;
 }
@@ -52,8 +51,6 @@ h1 + p {
 	text-decoration: none;
 	padding: 10px 20px;
 	border: solid #ffae00;
-	
-	
 }
 
 .site-nav a:hover {
@@ -71,26 +68,17 @@ main {
 	display: flex;
 	justify-content: center;
 	padding: 5px 45px 2px 62px;
-	margin: 20px 315px 25px 225px;
+	margin: 20px auto 25px;
+	width:100%;
+	max-width: calc(100%-48px);
 	text-align: left;
+	box-sizing: border-box;
+
 }
 
-.history p {
+.history {
+	display: flex;
 	color: white;
-}
-
-.date {
-	color: blue;
-}
-
-.episodes {
-	color: red;
-	font-style: italic;
-}
-
-.movies  {
-	font-style: italic;
-	color: yellow;
 }
 
 .images {
@@ -107,13 +95,32 @@ main {
 }
 
  /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-	section img {
-		display:flex;
-		flex-flow:column wrap;
+ @media screen and (max-width: 768px) {
+	header {
+	 flex-direction: column;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	}
+	header h1 {
+		text-align: center;
 		align-items: center;
 	}
-	body {
-		background-color: rgb(117, 18, 126);
+	nav {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+ 	}
+	nav ul {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+	 gap: 9px
 	}
- }
+
+	 .history {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	}
+}

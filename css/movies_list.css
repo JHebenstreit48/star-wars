@@ -4,10 +4,14 @@ html {
     background-color: #0a0100;
 }
 
+body {
+	box-sizing: border-box;
+}
+
 /* Start Page Heading */
 
 h1 {
-	margin: 20px 40px 45px 40px;
+	margin: 20px 2% 45px;
 	color: Yellow;
 	text-align: center;
 	font-size: 375%;
@@ -40,7 +44,6 @@ h1 + p {
 	list-style: none;
 	float: left;
 	margin: 0 8px 0 8px;
-	margin-right: 8px;
 	width: 150px;
 	text-align: center;
 }
@@ -77,7 +80,8 @@ ol ul {
 	color: rgb(252, 28, 28);
 }
 
-.border {
+.list {
+	display:flex;
 	border: solid white;
     border: 3px 3px 3px 3px;
 	padding: 20px 40px 20px 20px;
@@ -91,4 +95,33 @@ footer {
 
 footer a {
     color: red;
+}
+
+/* for devices 600 pixels in size and smaller */
+@media screen and (max-width: 768px) {
+	header {
+	 flex-direction: column;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	 align-items: center;
+	}
+	header h1 {
+		text-align: center;
+		align-items: center;
+	}
+	nav {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+ 	}
+	nav ul {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+	 gap: 9px
+	}
+	.list {
+	 text-align: center;
+	 justify-content: center;
+	}
 }
