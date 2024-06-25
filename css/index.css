@@ -90,9 +90,16 @@ main {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	margin:  auto 0 auto;
+	margin:  0 auto;
 	max-width: calc(100%-48px);
-	overflow: hidden;
+	min-width:calc(100%-48px);
+	width:77%;
+}
+
+.images div {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
 }
 
 .images img {
@@ -101,11 +108,13 @@ main {
 	padding: 8px;
 	margin-top: auto;
 	max-width: calc(100%-48px);
-	max-height: calc(100%-48px);
-	max-width: 30%;
+	min-width: calc(100%-48px);
+	width: 30%;
 }
 
- /* Extra small devices (phones, 600px and down) */
+
+
+ /* Extra small devices (phones, 768px and down) */
  @media screen and (max-width: 768px) {
 	header {
 	 flex-direction: column;
@@ -115,6 +124,10 @@ main {
 	header h1 {
 		text-align: center;
 		align-items: center;
+		margin: 20px auto 50px auto;
+		padding: 10px 40px 10px 40px;
+		max-width: 100%;
+		width: 76%;
 	}
 	nav {
 	 display: flex;
@@ -132,9 +145,55 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 	}
 	.images {
-		width: auto;
+		min-width: calc(100%-48px);
+		width: 50%;
 	}
+}
+/* For screen sizes 600px and down */
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	   }
+	   header h1 {
+		   text-align: center;
+		   align-items: center;
+		   margin: 20px auto 50px auto;
+		   padding: 10px 40px 10px 40px;
+		   max-width: 100%;
+		   width: 50%;
+	   }
+	   nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		}
+	   nav ul {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 9px
+	   }
+   
+	   .history {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: calc(100%-48);
+		min-width: calc(100%-48);
+		width: 85%;
+		}
+
+		.images div {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+			min-width: calc(100%-48px);
+			max-width: calc(100%-48px);
+			width: 95%;
+
+		}
 }
