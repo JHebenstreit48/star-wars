@@ -30,7 +30,7 @@ h1 + p {
 /* Start Site Navigation */
 
 .site-nav {
-	margin: 10px 20px 32px 20px;
+	margin: 10px 20px 50px 20px;
 	display: flex;
 	gap: 6px;
 }
@@ -82,19 +82,14 @@ ol ul {
 
 .list {
 	display:flex;
-	border: solid white;
-    border: 3px 3px 3px 3px;
-	padding: 20px 40px 20px 20px;
+	justify-content: center;
+	border: 3px solid rgb(43, 201, 245);
+	padding: 10px 10px 10px 0;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-footer {
-    text-align: center;
-}
-
-footer a {
-    color: red;
+	max-width: 100%;
+	width: 42%;
+	box-shadow: 0 0 20px 14px rgb(155, 7, 223);;
 }
 
 /* for devices 600 pixels in size and smaller */

@@ -12,13 +12,15 @@ body {
 /* Start Page heading */
 
 h1 {
-	margin: 20px 2% 45px;
+	margin: 20px auto 50px auto;
 	color: Yellow;
 	text-align: center;
 	font-size: 375%;
 	padding: 10px 40px 10px 40px;
 	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
 	border-radius: 8px;
+	max-width: 100%;
+	width: 76%;
 }
 
 /* End Page heading */
@@ -79,19 +81,28 @@ main {
 .history {
 	display: flex;
 	color: white;
+	max-width: calc(100%-48px);
+	width: 83%;
 }
 
 .images {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin-left: 150px;
-	margin-right: 210px;
+	align-items: center;
+	margin:  auto 0 auto;
+	max-width: calc(100%-48px);
+	overflow: hidden;
 }
 
 .images img {
-	max-width: 25%;
-	padding: 10px;
+	justify-content: center;
+	flex-flow: row wrap;
+	padding: 8px;
+	margin-top: auto;
+	max-width: calc(100%-48px);
+	max-height: calc(100%-48px);
+	max-width: 30%;
 }
 
  /* Extra small devices (phones, 600px and down) */
@@ -122,5 +133,8 @@ main {
 	justify-content: center;
 	align-items: center;
 	
+	}
+	.images {
+		width: auto;
 	}
 }
