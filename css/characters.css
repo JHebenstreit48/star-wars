@@ -11,13 +11,15 @@ body {
 /* Start Page Heading */
 
 h1 {
-	margin: 20px 2% 45px;
+	margin: 20px auto 50px auto;
 	color: Yellow;
 	text-align: center;
 	font-size: 375%;
-	padding: 10px auto 10px;
+	padding: 10px 40px 10px 40px;
 	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
 	border-radius: 8px;
+	max-width: 100%;
+	width: 76%;
 }
 
 /* End Page Heading */
