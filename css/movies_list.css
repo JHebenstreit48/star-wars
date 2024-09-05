@@ -1,79 +1,10 @@
-/* Set background color for webpage */
-
-html {
-    background-color: #0a0100;
-}
-
-body {
-	box-sizing: border-box;
-}
-
-/* Start Page Heading */
-
-h1 {
-	margin: 20px auto 50px auto;
-	color: Yellow;
-	text-align: center;
-	font-size: 375%;
-	padding: 10px 40px 10px 40px;
-	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
-	border-radius: 8px;
-	max-width: 100%;
-	width: 76%;
-}
-
-h1 + p {
-	margin: 15px;
-	padding: 15px;
-}
-
-/* End Page Heading */
-
-/* Start Site Navigation */
-
-.site-nav {
-	margin: 10px 20px 50px 20px;
-	display: flex;
-	gap: 6px;
-}
-
-.site-nav ul {
-	margin: 0 auto 0 auto;
-	padding: 0%;
-}
-
-.site-nav li {
-	list-style: none;
-	float: left;
-	margin: 0 8px 0 8px;
-	width: 150px;
-	text-align: center;
-}
-
-.site-nav a {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	display: block;
-	color:  yellow;
-	text-decoration: none;
-	padding: 10px 20px;
-	border: solid #ffae00;
-}
-
-.site-nav a:hover {
-	background-color: rgb(135, 2, 147);
-	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
-}
-
-/* .site-nav a:active {
-	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
-} */
 
 /* End Site Navigation */
 
 ol {
 	list-style-type: upper-roman;
-    list-style-position: inside;
-    color: rgb(235, 222, 37);
+	list-style-position: inside;
+	color: rgb(235, 222, 37);
 }
 
 ol ul {
@@ -83,42 +14,48 @@ ol ul {
 }
 
 .list {
-	display:flex;
+	display: flex;
 	justify-content: center;
 	border: 3px solid rgb(43, 201, 245);
 	padding: 10px 10px 10px 0;
+	margin-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%;
 	width: 42%;
-	box-shadow: 0 0 20px 14px rgb(155, 7, 223);;
+	box-shadow: 0 0 20px 14px rgb(155, 7, 223);
+	;
 }
 
 /* for devices 600 pixels in size and smaller */
 @media screen and (max-width: 768px) {
 	header {
-	 flex-direction: column;
-	 flex-wrap: wrap;
-	 justify-content: center;
-	 align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
+
 	header h1 {
 		text-align: center;
 		align-items: center;
 	}
+
 	nav {
-	 display: flex;
-	 flex-direction: column;
-	 text-align: center;
- 	}
-	nav ul {
-	 display: flex;
-	 flex-direction: column;
-	 text-align: center;
-	 gap: 9px
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 9px
+	}
+
 	.list {
-	 text-align: center;
-	 justify-content: center;
+		text-align: center;
+		justify-content: center;
 	}
 }

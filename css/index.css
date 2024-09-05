@@ -12,14 +12,14 @@ body {
 /* Start Page heading */
 
 h1 {
-	margin: 20px auto 50px auto;
+	margin: 42px auto 63px auto;
 	color: Yellow;
 	text-align: center;
-	font-size: 375%;
-	padding: 10px 40px 10px 40px;
+	font-size: 381%;
+	padding: 10px 40px;
 	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
-	border-radius: 8px;
-	max-width: 100%;
+	border-radius: 15px;
+	max-width: 58%;
 	width: 76%;
 }
 
@@ -28,31 +28,33 @@ h1 {
 /* Start Site Navigation */
 
 .site-nav {
-	margin: 10px 20px 32px 20px;
 	display: flex;
-	gap: 6px;
 }
 
-.site-nav ul {
-	margin: 0 auto 0 auto;
-	padding: 0%;
+ul {
+	margin: 0 auto;
 }
 
-.site-nav li {
+.nav-buttons {
 	list-style: none;
 	float: left;
-	margin: 0 8px 0 8px;
-	width: 150px;
-	text-align: center;
+	margin-left: 16px;
+	margin-right: 16px;
+	width: 12rem;
 }
 
-.site-nav a {
+.nav-text {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color:  yellow;
 	text-decoration: none;
-	padding: 10px 20px;
-	border: solid #ffae00;
+	border: 4px solid #ffae00;
+	border-radius: 8px;
+	font-size: 30px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .site-nav a:hover {
@@ -60,9 +62,6 @@ h1 {
 	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
 }
 
-/* .site-nav a:active {
-	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset; 
-} */
  
 /* End Site Navigation */
 
@@ -77,41 +76,6 @@ main {
 	box-sizing: border-box;
 
 }
-
-.history {
-	display: flex;
-	color: white;
-	max-width: calc(100%-48px);
-	width: 83%;
-}
-
-.images {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	margin:  0 auto;
-	max-width: calc(100%-48px);
-	min-width:calc(100%-48px);
-	width:77%;
-}
-
-.images div {
-	display: flex;
-	flex-flow: row wrap;
-	position: relative;
-}
-
-.images img {
-	justify-content: center;
-	flex-flow: row wrap;
-	padding: 8px;
-	margin-top: auto;
-	max-width: calc(100%-48px);
-	min-width: calc(100%-48px);
-	width: 30%;
-}
-
 
 
  /* Extra small devices (phones, 768px and down) */

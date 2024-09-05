@@ -1,0 +1,31 @@
+.history {
+	display: flex;
+	color: white;
+	max-width: calc(100%-48px);
+	width: 83%;
+}
+
+.images {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin:  0 auto;
+	max-width: calc(100%-48px);
+	min-width:calc(100%-48px);
+	width:60%;
+}
+
+.images div {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+}
+
+.images img {
+	justify-content: center;
+	flex-flow: row wrap;
+	padding: 8px;
+	margin-top: auto;
+	width: 30%;
+}

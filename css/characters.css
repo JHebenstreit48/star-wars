@@ -1,64 +1,4 @@
-/* Set background color for webpage */
 
-html {
-    background-color: #0a0100;
-}
-
-body {
-	box-sizing: border-box;
-}
-
-/* Start Page Heading */
-
-h1 {
-	margin: 20px auto 50px auto;
-	color: Yellow;
-	text-align: center;
-	font-size: 375%;
-	padding: 10px 40px 10px 40px;
-	box-shadow: 0 0 20px 14px rgb(31, 203, 255);
-	border-radius: 8px;
-	max-width: 100%;
-	width: 76%;
-}
-
-/* End Page Heading */
-
-/* Start Site Navigation */
-
-.site-nav {
-	margin: 10px 20px 32px 20px;
-	display: flex;
-	gap: 6px;
-}
-
-.site-nav ul {
-	margin: 0 auto 0 auto;
-	padding: 0%;
-}
-
-.site-nav li {
-	list-style: none;
-	float: left;
-	margin: 0 8px 0 8px;
-	margin-right: 8px;
-	width: 150px;
-	text-align: center;
-}
-
-.site-nav a {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	display: block;
-	color:  yellow;
-	text-decoration: none;
-	padding: 10px 20px;
-	border: solid #ffae00;
-}
-
-.site-nav a:hover {
-	background-color: rgb(135, 2, 147);
-	box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
-}
 
 /* .site-nav a:active {
     box-shadow: 1px 1px 5px 3px rgb(39, 255, 255) inset;
@@ -133,10 +73,10 @@ td {
 	 flex-wrap: wrap;
 	 justify-content: center;
 	}
-	header h1 {
+	/* header h1 {
 		text-align: center;
 		align-items: center;
-	}
+	} */
 	nav {
 	 display: flex;
 	 flex-direction: column;
