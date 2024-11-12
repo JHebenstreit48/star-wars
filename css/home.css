@@ -2,7 +2,9 @@
 	display: flex;
 	color: white;
 	max-width: calc(100%-48px);
-	width: 83%;
+	width: 65%;
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
 
 .images {
@@ -13,7 +15,7 @@
 	margin:  0 auto;
 	max-width: calc(100%-48px);
 	min-width:calc(100%-48px);
-	width:60%;
+	width:50%;
 }
 
 .images div {
